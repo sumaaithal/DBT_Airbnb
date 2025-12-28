@@ -1,0 +1,22 @@
+version: 2
+
+#refer raw table as source tables
+sources:
+  - name: airbnb #namespace
+    schema: raw
+    tables:
+      - name: listings
+        identifier: raw_listings
+
+      - name: hosts
+        identifier: raw_hosts
+
+      - name: reviews
+        identifier: raw_reviews
+        config:
+          loaded_at_field: date #name of the column
+          freshness:
+            warn_after: {count: 1, period: hour} #older than 1 hour, warning
+            error_after: {count: 24, period: hour} #older than 24 hours, error
+
+

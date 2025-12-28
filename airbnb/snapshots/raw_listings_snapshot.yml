@@ -1,0 +1,12 @@
+snapshots:
+  - name: scd_raw_listings
+    relation: source('airbnb', 'listings')
+    config:
+      unique_key: id 
+      updated_at: updated_at
+      strategy: timestamp #production
+      hard_deletes: invalidate #someone deletes record from table 
+      #checks the snapshot records and update the end column
+
+      #hard_delete: new_record option which adds new dbt_is_deleted, if deleted the value 
+      #will be flipped to true
