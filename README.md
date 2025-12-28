@@ -3,23 +3,23 @@
 models/
 ```
   ├── staging/       
-  ##### Raw data standardization
+  Raw data standardization
   ├── intermediate/  
-  ##### Transformations and joins
+  Transformations and joins
   └── marts/         
-  ##### Final fact and dimension tables
+  Final fact and dimension tables
 ```
 
-seeds/                
 ##### Static reference datasets  
-snapshots/            
+seeds/   
 ##### Historical tracking for SCD Type 2  
-tests/                
-##### Data quality and integrity checks  
-macros/               
+snapshots/
+##### Data quality and integrity checks 
+tests/
 ##### Reusable transformation logic  
-dbt_project.yml       
+macros/
 ##### Project configuration
+dbt_project.yml       
 
 ## 🔗 Source SQL Modeling
 
