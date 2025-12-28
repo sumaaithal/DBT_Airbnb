@@ -1,0 +1,52 @@
+# DBT_Airbnb
+
+
+🏠 DBT Airbnb Project
+
+This repository contains a dbt (Data Build Tool) project designed to transform raw Airbnb data into analytics-ready datasets using Snowflake as the data warehouse. The project demonstrates industry-standard analytics engineering practices with a strong focus on scalability, maintainability, and data quality.
+
+📌 Project Objective
+
+The primary objective of this project is to build a robust end-to-end data transformation pipeline that converts raw Airbnb source data into well-structured fact and dimension tables suitable for reporting and analytics.
+
+The project emphasizes:
+	•	Clear separation of concerns using layered dbt models
+	•	Efficient processing of large datasets
+	•	Historical tracking of dimensional changes
+	•	Reproducible and version-controlled data transformations
+
+
+🧩 Key Concepts Covered
+
+This project showcases the following dbt and data-engineering concepts:
+	•	Source modeling using dbt source() definitions
+	•	Staging, intermediate, and marts layers
+	•	Seed-based reference data loading
+	•	Change Data Capture (CDC) using SCD Type 2
+	•	Incremental model strategy for performance optimization
+	•	Fact and dimension table design for analytics
+
+
+🔄 High-Level Data Flow
+	•	Raw Airbnb tables are ingested into Snowflake
+	•	Source models define and document raw datasets
+	•	Staging models standardize and clean raw data
+	•	Intermediate models apply business logic and enrich data
+	•	Final marts expose analytics-ready fact and dimension tables
+
+This layered approach ensures clarity, reusability, and reliable downstream analytics.
+
+
+🎯 Outcomes
+
+By implementing this project:
+	•	Raw Airbnb data is transformed into trusted analytical datasets
+	•	Historical changes in key attributes are preserved
+	•	Compute costs are minimized through incremental processing
+	•	Data consumers can query consistent and well-documented tables
+
+The result is a production-grade dbt project that mirrors real-world analytics engineering workflows.
+
+
+
+
