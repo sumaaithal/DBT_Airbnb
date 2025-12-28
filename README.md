@@ -1,12 +1,14 @@
 # DBT_Airbnb
 
 models/
+```
   ├── staging/       
   ##### Raw data standardization
   ├── intermediate/  
   ##### Transformations and joins
   └── marts/         
   ##### Final fact and dimension tables
+```
 
 seeds/                
 ##### Static reference datasets  
