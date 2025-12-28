@@ -1,16 +1,23 @@
 # DBT_Airbnb
 
 models/
-  ├── staging/       # Raw data standardization
-  ├── intermediate/  # Transformations and joins
-  └── marts/         # Final fact and dimension tables
+  ├── staging/       
+  # Raw data standardization
+  ├── intermediate/  
+  # Transformations and joins
+  └── marts/         
+  # Final fact and dimension tables
 
-seeds/                # Static reference datasets  
-snapshots/            # Historical tracking for SCD Type 2  
-tests/                # Data quality and integrity checks  
-macros/               # Reusable transformation logic  
-dbt_project.yml       # Project configuration
-```  [oai_citation:6‡GitHub](https://github.com/sumaaithal/DBT_Airbnb)
+seeds/                
+# Static reference datasets  
+snapshots/            
+# Historical tracking for SCD Type 2  
+tests/                
+# Data quality and integrity checks  
+macros/               
+# Reusable transformation logic  
+dbt_project.yml       
+# Project configuration
 
 ## 🔗 Source SQL Modeling
 
